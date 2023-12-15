@@ -21,7 +21,7 @@ export default function Navbar() {
       className={
         scrolnav == true
           ? "z-10  text-gray-800 fixed w-full bg-gray-100 justify-between items-center flex h-[80px] px-4"
-          : "z-10 text-gray-300 fixed w-full bg-gray-800 justify-between items-center flex h-[80px] px-4"
+          : "z-10 text-gray-100 fixed w-full  justify-between items-center flex h-[80px] px-4"
       }
     >
       <div className=' w-[50px]  '>
@@ -35,7 +35,7 @@ export default function Navbar() {
      // ? MENU 
      */}
       <ul className=' hidden md:flex text-2xl   '>
-        <li className=' hover:text-lime-300 '>
+        <li className='  hover:text-lime-300 '>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
