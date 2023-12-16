@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div name="skills" className="flex flex-col   bg-gray-800 w-full justify-center h-screen text-white  items-center">
+    <div name="skills" className="flex flex-col  bg-black  w-full justify-center h-screen text-white  items-center">
       <h1 className=" my-[50px] text-3xl font-bold border-b-[6px] border-b-lime-300 ">
       Skills
       </h1>

@@ -20,8 +20,8 @@ export default function Navbar() {
       name='navbar'
       className={
         scrolnav == true
-          ? "z-10  text-gray-800 fixed w-full bg-gray-100 justify-between items-center flex h-[80px] px-4"
-          : "z-10 text-gray-100 fixed w-full  justify-between items-center flex h-[80px] px-4"
+          ? "z-10 text-white fixed w-full bg-gradient-to-r from-blue-600 via-lime-400  to-lime-500 justify-between items-center flex h-[80px] px-4"
+          : "z-10  text-white  fixed w-full  justify-between items-center flex h-[80px] px-4"
       }
     >
       <div className=' w-[50px]  '>
@@ -35,27 +35,27 @@ export default function Navbar() {
      // ? MENU 
      */}
       <ul className=' hidden md:flex text-2xl   '>
-        <li className='  hover:text-lime-300 '>
+        <li className='  hover:text-white '>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className=' hover:text-lime-300 '>
+        <li className=' hover:text-white '>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className=' hover:text-lime-300 links'>
+        <li className=' hover:text-white '>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className=' hover:text-lime-300'>
+        <li className=' hover:text-white'>
           <Link to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className=' hover:text-lime-300 '>
+        <li className=' hover:text-white'>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
@@ -66,7 +66,11 @@ export default function Navbar() {
        */}
       <div
         onClick={handleNav}
-        className=' md:hidden text-4xl z-10 cursor-pointer text-lime-300'
+        className={
+          scrolnav == true
+            ?' md:hidden text-4xl z-10 cursor-pointer text-white'
+            : ' md:hidden text-4xl z-10 cursor-pointer text-lime-300'
+        }
       >
         {!nav ? <IoClose /> : <GiHamburgerMenu />}
       </div>
@@ -76,7 +80,7 @@ export default function Navbar() {
       <ul
         className={
           !nav
-            ? " md:hidden absolute left-0 top-0 w-full h-screen flex flex-col  bg-gray-800 justify-center items-center w-full h-screen z-1 text-white "
+            ? " md:hidden absolute left-0 top-0 w-full h-screen flex flex-col  bg-black justify-center items-center  z-1 text-white "
             : " hidden"
         }
       >
@@ -114,7 +118,7 @@ export default function Navbar() {
           <li className=' flex justify-between items-center w-[200px] h-[60px] ml-[-129px] hover:ml-[-16px] duration-300'>
             <a
               target='_blank'
-              className='  text-blue-50 w-[100%] h-[100%] bg-blue-500 text-3xl  flex justify-between items-center w-full '
+              className='  text-blue-50  h-[100%] bg-blue-500 text-3xl  flex justify-between items-center w-full '
               href='https://www.linkedin.com/in/mern-bayt/'
             >
               <p className='ml-1'>Linkden</p>

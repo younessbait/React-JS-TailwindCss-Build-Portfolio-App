@@ -29,9 +29,17 @@
     height: 100%;
     backdrop-filter: blur(6px);
     background: rgba(0, 0, 0, 0.6);
-    
+
 }
 
 .effect:hover {
     background: rgba(163, 230, 53, 0.8)
+}
+
+.contact {
+    background: rgba(0, 0, 0, 1);
+    background-image: url('./Images/us.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

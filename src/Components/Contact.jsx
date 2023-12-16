@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import '../index.css'
 export default function Contact() {
   const notify = () => {
     if (user_email !== "" && user_email !== "" && message !== "") {
@@ -59,7 +60,7 @@ export default function Contact() {
   return (
     <div
       name='contact'
-      className='flex flex-col   bg-gray-800 w-full justify-center h-screen text-white  items-center'
+      className='contact flex flex-col  w-full justify-center h-screen text-white  items-center'
     >
       <h1 className=' my-[45px] text-3xl font-bold border-b-[6px] border-b-lime-300 '>
         Contact

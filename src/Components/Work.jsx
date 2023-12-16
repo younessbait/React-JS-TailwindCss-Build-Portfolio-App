@@ -8,7 +8,7 @@ export default function Work() {
   return (
     <div
       name="work"
-      className=" bg-gray-400 w-full h-screen text-white flex flex-col justify-center items-center "
+      className=" bg-lime-600 w-full h-screen text-white flex flex-col justify-center items-center "
     >
       <h1 className=" my-[20px] text-3xl font-bold border-b-[6px] border-b-lime-300 ">
         Work
