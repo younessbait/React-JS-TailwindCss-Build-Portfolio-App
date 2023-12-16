@@ -11,7 +11,7 @@ export default function Navbar() {
   const handleNav = () => setnav(!nav);
   const [scrolnav, setscrolnav] = useState(false);
   const chamgeback = () => {
-    window.scrollY >= 80 ? setscrolnav(true) : setscrolnav(false);
+    window.scrollY >= 70 ? setscrolnav(true) : setscrolnav(false);
   };
   window.addEventListener("scroll", chamgeback);
   return (
@@ -20,8 +20,8 @@ export default function Navbar() {
       name='navbar'
       className={
         scrolnav == true
-          ? "z-10 text-white fixed w-full bg-gradient-to-r from-blue-600 via-lime-400  to-lime-500 justify-between items-center flex h-[80px] px-4"
-          : "z-10  text-white  fixed w-full  justify-between items-center flex h-[80px] px-4"
+          ? "z-10 text-white fixed w-full bg-gradient-to-r from-blue-600 via-lime-400  to-lime-500 justify-between items-center flex h-[60px] px-4"
+          : "z-10  text-white  fixed w-full  justify-between items-center flex h-[60px] px-4"
       }
     >
       <div className=' w-[50px]  '>
@@ -68,8 +68,8 @@ export default function Navbar() {
         onClick={handleNav}
         className={
           scrolnav == true
-            ?' md:hidden text-4xl z-10 cursor-pointer text-white'
-            : ' md:hidden text-4xl z-10 cursor-pointer text-lime-300'
+            ? " md:hidden text-4xl z-10 cursor-pointer text-white"
+            : " md:hidden text-4xl z-10 cursor-pointer text-lime-300"
         }
       >
         {!nav ? <IoClose /> : <GiHamburgerMenu />}
