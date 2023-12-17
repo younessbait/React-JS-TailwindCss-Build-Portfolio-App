@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
+import Bounce from "react-reveal/Bounce";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import '../index.css'
+import "../index.css";
 export default function Contact() {
   const notify = () => {
     if (user_email !== "" && user_email !== "" && message !== "") {
@@ -62,9 +63,11 @@ export default function Contact() {
       name='contact'
       className='contact flex flex-col  w-full justify-center h-screen text-white  items-center'
     >
-      <h1 className=' my-[45px] text-3xl font-bold border-b-[6px] border-b-lime-300 '>
-        Contact
-      </h1>
+      <Bounce left>
+        <h1 className=' my-[45px] text-3xl font-bold border-b-[6px] border-b-lime-300 '>
+          Contact
+        </h1>
+      </Bounce>
       <form
         ref={form}
         onSubmit={sendEmail}
